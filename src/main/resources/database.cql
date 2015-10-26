@@ -1,0 +1,2 @@
+create keyspace if not exists user WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'}  and durable_writes = true;
+create table if not exists user.user (username text, name text, primary key (username));
